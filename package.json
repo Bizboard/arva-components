@@ -1,0 +1,19 @@
+{
+  "name": "arva-components",
+  "description": "Arva UI & logic components.",
+  "version": "1.0.0-pre-1",
+  "jspm": {
+    "directories": {
+      "lib": "src"
+    },
+    "dependencies": {
+      "arva-ds": "github:Bizboard/arva-ds@master",
+      "arva-utils": "github:Bizboard/arva-utils@master",
+      "di.js": "github:Bizboard/di.js@master"
+    },
+    "devDependencies": {
+      "traceur": "github:jmcriffey/bower-traceur@0.0.88",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
+    }
+  }
+}

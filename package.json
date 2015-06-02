@@ -2,6 +2,12 @@
   "name": "arva-components",
   "description": "Arva UI & logic components.",
   "version": "1.0.0-pre-1",
+  "main": false,
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:Bizboard/arva-components.git"
+  },
   "jspm": {
     "directories": {
       "lib": "src"

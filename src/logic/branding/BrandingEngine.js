@@ -12,7 +12,7 @@ export class BrandingEngine {
     set options(value){ this._options = value; }
 
     constructor(dataSource = null){
-        if (!dataSource) {
+        if (dataSource) {
             this._dataSource = dataSource.child('Branding');
         }
 

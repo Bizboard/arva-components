@@ -13,8 +13,8 @@
       "lib": "src"
     },
     "dependencies": {
-      "arva-ds": "github:Bizboard/arva-ds@master",
-      "arva-utils": "github:Bizboard/arva-utils@master",
+      "arva-ds": "github:Bizboard/arva-ds@1.0.0-pre-3",
+      "arva-utils": "github:Bizboard/arva-utils@1.0.0-pre-3",
       "di.js": "github:Bizboard/di.js@master"
     },
     "devDependencies": {

@@ -1,5 +1,12 @@
 /**
- * Created by tom on 20/05/15.
+ This Source Code is licensed under the MIT license. If a copy of the
+ MIT-license was not distributed with this file, You can obtain one at:
+ http://opensource.org/licenses/mit-license.html.
+
+ @author: Tom Clement (tjclement)
+ @license MIT
+ @copyright Bizboard, 2015
+
  */
 
 import {Inject}         from 'di.js';
@@ -25,6 +32,7 @@ export class BrandingEngine {
     /**
      * Sets the brand name to use in fetching the brand style information.
      * @param {String} name Brand name, may contain forward slashes for multiple branch levels ('Google/ProjectX').
+     * @returns {void}
      */
     setBrandName(name) {
         this._brandName = name;
@@ -35,7 +43,7 @@ export class BrandingEngine {
      * If a cached version is present, it is used to populate the options, and the function is resolved immediately.
      * Otherwise, the options are populated from the external dataSource.
      * In both cases, the latest options are fetched from the dataSource and saved to cache for use on the next app launch.
-     * @returns {Promise}
+     * @returns {Promise} A promise that is resolved when the branding options have been fetched from cache or remote storage.
      */
     setOptionsFromDataSource() {
         return new Promise(function(resolve) {
@@ -65,6 +73,7 @@ export class BrandingEngine {
     /**
      * Set the branding options manually.
      * @param {Object} options Dictionary object with wanted branding options. Example: {textColor: 'black', backgroundColor: 'white'}
+     * @returns {void}
      */
     setOptions(options) {
         this.options = options;
@@ -74,8 +83,9 @@ export class BrandingEngine {
 
     /**
      * Set one branding option manually.
-     * @param {String} optionName
-     * @param {*} value
+     * @param {String} optionName Name of the option to fetch.
+     * @param {*} value Value to set the option to.
+     * @returns {void}
      */
     setOption(optionName, value) {
         if(!this.options) { this.options = {}; }
@@ -85,8 +95,8 @@ export class BrandingEngine {
 
     /**
      * Get a branding option value by its name.
-     * @param {String} optionName
-     * @returns {*}
+     * @param {String} optionName Name of the option to fetch.
+     * @returns {*} Option
      */
     get(optionName) {
         return this.options[optionName];
@@ -94,7 +104,7 @@ export class BrandingEngine {
 
     /**
      * Gets all branding options for the current brand.
-     * @returns {*}
+     * @returns {*} All options
      */
     getAll() {
         return this.options;

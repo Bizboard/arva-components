@@ -10,13 +10,13 @@ System.config({
 
 System.config({
   "map": {
-    "arva-ds": "github:Bizboard/arva-ds@master",
-    "arva-utils": "github:Bizboard/arva-utils@master",
+    "arva-ds": "github:Bizboard/arva-ds@1.0.0-beta-1",
+    "arva-utils": "github:Bizboard/arva-utils@1.0.0-beta-1",
     "di.js": "github:Bizboard/di.js@master",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
-    "github:Bizboard/arva-ds@master": {
-      "arva-context": "github:Bizboard/arva-utils@master",
+    "github:Bizboard/arva-ds@1.0.0-beta-1": {
+      "arva-context": "github:Bizboard/arva-utils@1.0.0-beta-1",
       "di.js": "github:Bizboard/di.js@master",
       "eventemitter3": "npm:eventemitter3@1.1.0",
       "firebase": "github:firebase/firebase-bower@2.2.6",

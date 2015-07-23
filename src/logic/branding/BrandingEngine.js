@@ -23,19 +23,8 @@ export class BrandingEngine {
             this._dataSource = dataSource.child('Branding');
         }
 
-        this.setBrandName('Default');
-
         /* Bind all methods to this object's scoping. */
         ObjectHelper.bindAllMethods(this, this);
-    }
-
-    /**
-     * Sets the brand name to use in fetching the brand style information.
-     * @param {String} name Brand name, may contain forward slashes for multiple branch levels ('Google/ProjectX').
-     * @returns {void}
-     */
-    setBrandName(name) {
-        this._brandName = name;
     }
 
     /**
@@ -56,12 +45,12 @@ export class BrandingEngine {
                 resolve();
             }
 
-            /* If we didn't get a dataSource injected into this class, don't try to us it. */
+            /* If we didn't get a dataSource injected into this class, don't try to use it. */
             if(!this._dataSource) { resolve(); }
 
             /* Use the dataSource to populate our branding options if no cache is available,
              * or save the latest options to cache so they are available on the next app launch. */
-            let dataReference = this._dataSource.child(this._brandName);
+            let dataReference = this._dataSource;
             dataReference.setValueChangedCallback(function(dataSnapshot) {
                 dataReference.removeValueChangedCallback();
                 this.setOptions(dataSnapshot.val());

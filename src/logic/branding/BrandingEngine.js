@@ -65,9 +65,9 @@ export class BrandingEngine {
      * @returns {void}
      */
     setOptions(options) {
-        this.options = options;
+        this.options = options || {};
 
-        if(Storage) { localStorage.setItem('Branding', JSON.stringify(options)); }
+        if(Storage) { localStorage.setItem('Branding', JSON.stringify(this.options)); }
     }
 
     /**

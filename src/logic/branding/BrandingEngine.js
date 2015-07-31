@@ -23,6 +23,8 @@ export class BrandingEngine {
             this._dataSource = dataSource.child('Branding');
         }
 
+        this.options = {};
+
         /* Bind all methods to this object's scoping. */
         ObjectHelper.bindAllMethods(this, this);
     }

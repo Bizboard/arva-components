@@ -6,16 +6,16 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:Bizboard/arva-components.git"
+    "url": "git@bitbucket.org:bizboard/arva-components.git"
   },
   "jspm": {
     "directories": {
       "lib": "src"
     },
     "dependencies": {
-      "arva-ds": "github:Bizboard/arva-ds@develop",
-      "arva-utils": "github:Bizboard/arva-utils@develop",
-      "di.js": "github:Bizboard/di.js@master"
+      "arva-ds": "github:bizboard/arva-ds@develop",
+      "arva-utils": "github:bizboard/arva-utils@develop",
+      "di.js": "github:bizboard/di.js@master"
     },
     "devDependencies": {
       "traceur": "github:jmcriffey/bower-traceur@0.0.90",

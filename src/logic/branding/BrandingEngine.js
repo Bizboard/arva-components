@@ -9,11 +9,11 @@
 
  */
 
-import {Inject}         from 'di.js';
+import {inject}         from 'di.js';
 import {DataSource}     from 'arva-ds/core/DataSource';
 import {ObjectHelper}   from 'arva-utils/ObjectHelper';
 
-@Inject(DataSource)
+@inject(DataSource)
 export class BrandingEngine {
     get options(){ return this._options; }
     set options(value){ this._options = value; }

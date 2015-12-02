@@ -1,15 +1,13 @@
 System.config({
-  "baseURL": "/",
-  "defaultJSExtensions": true,
-  "transpiler": "traceur",
-  "paths": {
+  baseURL: "/",
+  defaultJSExtensions: true,
+  transpiler: "traceur",
+  paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
-  }
-});
+  },
 
-System.config({
-  "map": {
+  map: {
     "arva-ds": "github:bizboard/arva-ds@develop",
     "arva-utils": "github:bizboard/arva-utils@develop",
     "di.js": "github:bizboard/di.js@master",
@@ -141,4 +139,3 @@ System.config({
     }
   }
 });
-

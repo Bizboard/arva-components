@@ -1,7 +1,7 @@
 {
   "name": "arva-components",
   "description": "Arva UI & logic components.",
-  "version": "1.0.0-pre-1",
+  "version": "1.0.0-beta-2",
   "main": false,
   "homepage": "",
   "repository": {
@@ -13,13 +13,15 @@
       "lib": "src"
     },
     "dependencies": {
-      "arva-ds": "github:bizboard/arva-ds@develop",
-      "arva-utils": "github:bizboard/arva-utils@develop",
+      "SPSoapAdapter": "github:bizboard/SPSoapAdapter@1.0.0-beta-2",
+      "arva-ds": "github:bizboard/arva-ds@1.0.0-beta-2",
+      "arva-utils": "github:bizboard/arva-utils@1.0.0-beta-2",
       "di.js": "github:bizboard/di.js@master"
     },
     "devDependencies": {
-      "traceur": "github:jmcriffey/bower-traceur@0.0.90",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.90"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
   }
 }

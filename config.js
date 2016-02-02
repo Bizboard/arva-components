@@ -33,26 +33,33 @@ System.config({
   },
 
   map: {
-    "arva-ds": "github:bizboard/arva-ds@develop",
-    "arva-utils": "github:bizboard/arva-utils@develop",
+    "arva-ds": "github:bizboard/arva-ds@1.0.0-beta-3",
+    "arva-utils": "github:bizboard/arva-utils@1.0.0-beta-3",
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
     "di.js": "github:bizboard/di.js@master",
-    "github:bizboard/SPSoapAdapter@develop": {
+    "github:bizboard/SPSoapAdapter@1.0.0-beta-3": {
       "arva-utils": "github:bizboard/arva-utils@develop",
       "eventemitter3": "npm:eventemitter3@1.1.1",
       "json-query": "npm:json-query@1.5.0",
       "lodash": "npm:lodash@4.2.0",
       "xml2js": "npm:xml2js@0.4.16"
     },
-    "github:bizboard/arva-ds@develop": {
-      "SPSoapAdapter": "github:bizboard/SPSoapAdapter@develop",
-      "arva-utils": "github:bizboard/arva-utils@develop",
+    "github:bizboard/arva-ds@1.0.0-beta-3": {
+      "SPSoapAdapter": "github:bizboard/SPSoapAdapter@1.0.0-beta-3",
+      "arva-utils": "github:bizboard/arva-utils@1.0.0-beta-3",
       "di": "github:bizboard/di.js@master",
       "eventemitter3": "npm:eventemitter3@1.1.1",
       "firebase": "github:firebase/firebase-bower@2.4.0",
       "lodash": "npm:lodash@4.2.0"
+    },
+    "github:bizboard/arva-utils@1.0.0-beta-3": {
+      "bowser": "npm:bowser@1.0.0",
+      "di": "github:bizboard/di.js@master",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "lodash": "npm:lodash@4.2.0",
+      "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "github:bizboard/arva-utils@develop": {
       "bowser": "npm:bowser@1.0.0",
